@@ -59,7 +59,7 @@ a {
 }
 .page-header .container {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
 .header-nav {
@@ -162,6 +162,8 @@ a {
     url(../images/hero/hero-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero .container {
   text-align: center;
@@ -217,6 +219,22 @@ a {
 .benefits-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+.icon-block {
+  display: flex;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+}
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+}
 .benefits-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -257,9 +275,11 @@ a {
 .team-item {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .foto-desc {
-  padding: 32px 0 32px;
+  padding: 32px 16px;
 }
 .team-foto {
 }
@@ -277,6 +297,34 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.socials-list {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.socials-list:hover {
+  background-color: #404bbf;
+}
+.icon-item {
+  display: flex;
+}
+.social-list a {
+  display: block;
+}
+.socials-icon {
+  width: 16px;
+  height: 16px;
 }
 /* #endregion */
 
@@ -331,6 +379,13 @@ a {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+
+  /* max-width: 1440px;
+  margin: 0 auto; */
+}
+.footer .container {
+  display: flex;
+  gap: 120px;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -351,5 +406,20 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer-social {
+}
+.footer-social .socials-icon {
+  width: 24px;
+  height: 24px;
+}
+.social-media {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-social .socials-list:hover {
+  background-color: #31d0aa;
 }
 /* #endregion */
